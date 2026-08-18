@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untuk Kamu ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-1"></div>
+  <div class="ambient ambient-2"></div>
+
+  <header class="topbar">
+    <div class="brand">for <span>you</span> ♡</div>
+    <button class="music-btn" id="musicBtn" aria-label="Musik">♪</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">A little place I made for you</p>
+      <h1>Some moments<br><em>feel better</em> with you.</h1>
+      <p class="hero-text">
+        Swipe perlahan. Ada beberapa kenangan kecil yang ingin aku simpan di sini.
+      </p>
+      <button class="start-btn" id="startBtn">Mulai perjalanan <span>→</span></button>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">our little gallery</p>
+          <h2>Swipe fotonya ♡</h2>
+        </div>
+        <label class="upload-btn">
+          + Tambah foto
+          <input type="file" id="photoInput" accept="image/*" multiple hidden>
+        </label>
+      </div>
+
+      <div class="slider-wrap">
+        <div class="progress"><span id="progressBar"></span></div>
+        <div class="card-stack" id="cardStack"></div>
+        <div class="swipe-hint" id="swipeHint">
+          <span>←</span> swipe <span>→</span>
+        </div>
+      </div>
+
+      <div class="dots" id="dots"></div>
+      <p class="counter" id="counter">01 / 04</p>
+    </section>
+
+    <section class="letter">
+      <div class="letter-card">
+        <span class="quote">“</span>
+        <p class="eyebrow">a tiny note</p>
+        <h2>Untuk seseorang<br>yang bikin hari terasa berbeda.</h2>
+        <p>
+          Aku nggak tahu halaman ini akan membawa kita sejauh apa.
+          Tapi untuk sekarang, aku cuma mau bilang:
+          aku senang bisa mengenal kamu.
+        </p>
+        <div class="signature">— dari seseorang yang sedang aku kenal ♡</div>
+      </div>
+    </section>
+
+    <section class="final">
+      <p class="eyebrow">one last thing</p>
+      <h2>Kalau kamu tersenyum<br>setelah melihat ini,<br><em>jangan lupa like ya ♡</em></h2>
+      <button class="heart-btn" id="heartBtn">♡</button>
+      <p id="heartMessage">Klik kalau kamu juga senyum.</p>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <button class="close-lightbox" id="closeLightbox">×</button>
+    <img id="lightboxImg" src="" alt="Foto">
+  </div>
+
+  <audio id="music" loop>
+    <!-- Ganti src dengan file musik sendiri jika ingin musik otomatis setelah interaksi -->
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
